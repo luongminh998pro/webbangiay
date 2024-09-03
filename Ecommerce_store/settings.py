@@ -75,12 +75,16 @@ WSGI_APPLICATION = 'Ecommerce_store.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'site1',  # Thay thế 'your_database_name' bằng tên cơ sở dữ liệu MySQL của bạn
+        'ENGINE': 'django.db.backends.mysql', 
+        'NAME': 'site3',
         'USER': 'root',
         'PASSWORD': '',
         'HOST': 'localhost',
-        'PORT': '3306',  # Bạn có thể bỏ qua dòng này nếu bạn sử dụng cổng mặc định của MySQL
+        'PORT': '3306',
+        "OPTIONS": {
+            "sql_mode": "STRICT_TRANS_TABLES",
+            'charset': 'utf8mb4',
+        }
     }
 }
 

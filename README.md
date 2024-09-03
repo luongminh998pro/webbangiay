@@ -27,7 +27,7 @@ SneakerHub is a modern web application built with Django for backend logic, Boot
 1. **Clone the Repository**
 
    ```bash
-   git clone https://github.com/MazenTayseer/SneakerHub.git
+   git clone https://github.com/luongminh998pro/webbangiay.git
    cd SneakerHub
    ```
 
